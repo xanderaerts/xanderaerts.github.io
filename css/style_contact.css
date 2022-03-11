@@ -1,0 +1,45 @@
+.contact-form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:column;
+    width: 20%;
+    margin-left: 40%;
+    margin-top:10px ;
+    
+}
+.title-contact{
+    margin-bottom: 10px;
+}
+
+form{
+    border:1px solid black;
+    background-color: white;
+}
+
+#text{
+    height: 100px;
+}
+
+#error{
+    color:red;
+    display: none;
+}
+
+input{
+    margin: 10px;
+    border: 1px solid black;
+}
+
+
+.button{
+    background-color: lightgray;
+    border: 1px solid black;
+    
+}
+.button:hover{
+    background-color: #6C9B3C;
+    border:2px solid black;
+}
+
+

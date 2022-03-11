@@ -1,0 +1,38 @@
+
+/*Style voor het grote menu op de homepage*/
+.menubox{
+    margin: 20px;
+    border:2px solid black;
+    text-align: center;
+    background-color:white;
+    padding-top:10px;
+    border-radius: 10px;
+}
+.menubox h1{
+    font-size: xx-large;
+}
+.menubox p{
+    padding: 20px;
+}
+
+.top-box{
+    width: 50%;
+    height: 100px;
+    margin-left: 25%;
+}
+
+.left-box{
+    width: 47%;
+    float: left;
+}
+
+.right-box{
+    float: right;
+    width: 47%;
+}
+
+.menubox:hover{
+    background-color: #6C9B3C;
+}
+
+

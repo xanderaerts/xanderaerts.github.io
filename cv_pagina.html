@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Over mij</title>
+        <meta charset="UTF-8"/>
+        <link href="css/reset.css" rel="stylesheet">
+        <link href="css/default_style.css" rel="stylesheet">
+        <link href="css/style_cv_pagina.css" rel="stylesheet">
+        <script src="/js/jquerry.js"></script>
+        <script>
+            $(document).ready(function()
+            {
+                info_overmij = $("#info_overmij");
+                info_hobby = $("#info_hobby");
+                info_gip = $("#info_gip");
+
+                xanderaerts = $(".xanderaerts");
+                hobby = $(".hobby");
+                gip = $(".gip");
+
+            
+                info_overmij.click(function()
+                {
+                    hobby.fadeOut();
+                    gip.fadeOut();
+                    xanderaerts.delay((500)).fadeIn();
+                });
+
+                info_hobby.click(function()
+                {
+                    gip.fadeOut();
+                    xanderaerts.fadeOut();
+                    hobby.delay((500)).fadeIn();
+                });
+
+                info_gip.click(function()
+                {
+                    xanderaerts.fadeOut();
+                    hobby.fadeOut();
+                    gip.delay((500)).fadeIn();
+                });
+
+
+            });
+            
+        </script>
+    </head>
+    <body>
+    <div class="wrapper">
+        <header>
+            <img class="logo" src="img/Logo_Hagel_2_notransp.png" alt="logo hagelstein"/>
+            <p class="title">Project: BIB Hagelstein</p>
+        </header>
+        <nav>
+            <h1></h1>
+            <div class="menu">
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="cv_pagina.html"">Over mij</a>
+                    </li>
+                   
+                    <li>
+                        <a href="project.html">Het project</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        
+        <h3>Kom meer te weten door op de vakjes te klikken!</h3>
+        <div id="overmij">
+        <ul class="overmij">
+            <li id="info_overmij">Xander Aerts <br/>
+                <img src="img/Foto_mezelf.png">
+            </li>
+            <li id="info_hobby">Hobby's <br/> 
+                <img src="img/foto_fiets_2.png" alt="Fiets foto">
+            </li>
+            <li id="info_gip">Voorgaande projecten <br/>
+                <img src="img/foto_gip.png" alt ="GIP">
+            </li>
+        </ul>
+        </div>
+        
+        <div class="content-box xanderaerts">
+            <h1>Xander Aerts</h1>
+            <p>Bij deze zal ik even wat meer over me zelf vertellen! Ik ben Xander Aerts, ik ben 19 jaar, afkomstig uit Bonheiden.
+            <br> Vorig jaar ben ik afgestudeerd aan College Hagelstein in de richting Boekhouden-Informatica.
+            </p>
+        </div>
+
+        <div class="content-box hobby">
+            <h1>Hobby's</h1>
+            <p>
+                Mijn voornaamste hobby is wielrennen, ondertussen koers ik al 7 jaar.
+                Ik fiets zo'n 400km per week!
+                <img src="img/foto_fiets_1.png"> 
+            </p>
+        </div>
+
+        <div class="content-box gip">
+            <h1>Voorgaande projecten</h1>
+            <p>
+                Vorig jaar heb ik een GIP moeten maken over mijn stage boekhouden!
+                Voor Informatica maakte ik 2 sites: <a href="http://frutabella.be">frutabella.be</a>, deze wordt echt gebruikt door een bevriend frituur. 
+                <br/> De andere site die ik maakte gaat over mijn leerkracht van toen: <a href="http://xander.collegehagelstein.online">xander.collegehagelstein.online</a>
+                <br/>Beide sites zijn gemaakt in WordPress!
+            </p>
+        </div>
+        
+
+        <footer>
+            <p>Copyright &copy; Thomas More Mechelen-Antwerpen vzw -Campus De Nayer -Professionele bachelor elektronica-ict –2021</p> 
+        </footer>
+    </div>
+    </body>
+</html>

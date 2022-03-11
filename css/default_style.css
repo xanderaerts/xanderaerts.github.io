@@ -1,0 +1,116 @@
+/*Standaard style voor alle pagina's*/
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background-image: url('../img/achtergrond.png');
+}
+
+
+a{
+    text-decoration: none;
+    color:black;
+}
+a:visited
+{
+    text-decoration: none;
+    color: black;
+}
+
+.wrapper{
+    max-width: 1800px;
+    min-width: 500px;
+    margin:0px auto 0px auto;
+}
+
+h1{
+    font-size: 175%;
+    text-align: center;
+    margin: 10px;
+}
+h3{
+    margin: 10px;
+    text-align: center;
+}
+
+/*Style voor de header*/
+header{
+    padding:30px;
+    background-color: #6C9B3C;
+    text-align: center;
+    border: 2px solid black;;
+    border-radius: 10px;
+}
+
+header::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.logo{
+	height: 100px;
+	float:left;
+    border: 2px solid white;
+    border-radius: 30px;
+}
+
+.title{
+	font-size:40px;
+	text-align: center;
+	padding: 25px 0px;
+    padding-right: 300px;
+}
+
+/*Style voor het menu*/
+nav {
+	background-color:darkgray;
+    font-size: large;
+    border: 1px solid black;
+    border-top:none;
+    border-radius: 10px;
+}
+
+
+nav li {
+	float: left;
+	width: 160px;
+    border-right: 1px solid black;
+}
+
+
+nav ul::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+nav a {
+	display:block;
+	color: black;
+	text-decoration: none;
+	text-align:center;
+	padding: 15px 15px;
+}
+
+nav li :hover{
+    background-color: white;
+    border: 1px solid black;
+    color:#6C9B3C;
+}
+
+.menu{
+    list-style-type: none;
+}
+
+/*Footer style*/
+footer{
+    
+    clear: both;
+    margin: 1%;
+    padding: 1% ;
+    border: 2px solid black;
+    text-align: center;
+    background-color:#6C9B3C;
+    width:90%;
+    border-radius: 10px;
+}

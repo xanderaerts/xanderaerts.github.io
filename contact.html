@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contact</title>
+        <meta charset="utf-8">
+        <link href="css/reset.css" rel="stylesheet">
+        <link href="css/default_style.css" rel="stylesheet">
+        <link href="css/style_contact.css" rel="stylesheet">
+        
+        <script>
+            function checkform()
+            {
+                var naam = document.getElementById("naam");
+                var email = document.getElementById("email");
+                var text = document.getElementById("text");
+                var error = document.getElementById("error");
+
+                if(naam.value == "" || email.value ==  "" || text.value == "")
+                {
+                    error.style.display= "block";
+                    return false;
+                }
+                return true;
+            }
+
+            function resetten()
+            {
+                var output = confirm("Bent u zeker dat u alles wilt wissen?");
+                if(output == true)
+                {
+                    document.getElementById("error").style.display = "none";
+                    return true;
+                }
+                else if(output == false)
+                {
+                    return false;
+                }
+                
+            }
+        </script>
+    </head>
+    <body>
+        <div class="wrapper">
+        <header>
+            <img class="logo" src="img/Logo_Hagel_2_notransp.png" alt="logo hagelstein"/>
+            <p class="title">Project: BIB Hagelstein</p>
+        </header>
+        <nav>
+            <div class="menu">
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="cv_pagina.html"">Over mij</a>
+                    </li>
+                    <li>
+                        <a href="project.html">Het project</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="box">
+            
+            <form " class="contact-form" action="mailto:r0843722@student.thomasmore.be" enctype="text/plain" method="POST" onSubmit="return checkform()" onReset="return resetten()">
+                <h1 class="title-contact">Contact</h1>
+                <h2 id="error">U heeft niet alle velden in gevuld!</h2>
+                <label for="naam">Naam*</label>
+                <input type="text" id="naam" name="naam">
+                <br>
+                <label for="emailadrs">Emailadres*</label>
+                <input type="text" id="email" name="emailadrs">
+                <br>
+                <label for="input">Uw bericht*</label>
+                <input type="text" id="text" name="input" placeholder="Typ hier uw bericht. "></input>
+                <br>
+                <p class="title-contact">Velden met een * zijn verplicht</p>
+                <div>
+                <input class="button" type="submit" value="Versturen">
+                <input class="button" type="reset" value="Leegmaken">
+                </div>
+            </form>
+
+        </div>
+        <footer>
+            <p>Copyright &copy; Thomas More Mechelen-Antwerpen vzw -Campus De Nayer -Professionele bachelor elektronica-ict –2021</p> 
+        </footer>
+    </div>
+    </body>
+</html>

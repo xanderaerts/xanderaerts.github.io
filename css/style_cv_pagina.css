@@ -1,0 +1,57 @@
+/*Style voor het keuze menu*/
+.overmij li{
+    border:2px solid black;
+    border-radius: 10px;
+    margin: 10px;
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    font-weight: bold;
+    background-color: white;
+}
+.overmij img{
+    margin: 20px;
+    height: 80%;
+}
+#overmij{
+    float: left;
+}
+
+/*Style voor de content box*/
+.content-box{
+    float:right;
+    border: 2px solid black;
+    width: 75%;
+    background-color: white;
+}
+
+.xanderaerts{
+    display:none;
+    text-align: center;
+    margin: 10px;
+}
+
+.hobby img{
+    width: 25%;
+    float: right;
+    margin: 20px;
+}
+.hobby{
+    display: none;
+    text-align: center;
+    margin: 10px;
+}
+.gip{
+    display: none;
+    padding: 5px;
+    margin: 10px;
+}
+
+.gip a{
+    text-decoration: underline;
+}
+.gip a:visited
+{
+    text-decoration:underline;
+}
+
