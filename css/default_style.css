@@ -106,7 +106,7 @@ nav li :hover{
 footer{
     
     clear: both;
-    margin: 1%;
+    margin: auto;
     padding: 1% ;
     border: 2px solid black;
     text-align: center;
